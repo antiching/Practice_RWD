@@ -1,0 +1,27 @@
+/* 全域border-box */
+
+*,
+*::before *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+
+    position: relative;
+    background: #ffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+sub {
+    vertical-align: sub;
+}

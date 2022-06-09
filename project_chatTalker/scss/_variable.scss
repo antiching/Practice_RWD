@@ -1,0 +1,61 @@
+$main-color: #56C4C5;
+$secondary-color: #FFD153;
+
+$link-color: #FFFFFF;
+$main-font-color: #221E1F;
+$secondary-font-color: #747474;
+
+
+$font-m: 16px;
+$font-title: $font-m * 2; //32px
+
+
+$btn-small-color: #FF5D50;
+$btn-small-hover-color: #ff3425;
+
+$card-bg-color: #FFFFFF;
+$bxsh-color: #00000014;
+$pagination-color:#DDDDDD;
+
+
+// btn
+
+@mixin btn_base {
+    padding: 12px 32px;
+    background: $main-color;
+    border-radius: 27px;
+    a{color: $link-color;}
+
+}
+
+
+@mixin btn_small {
+    padding: 8px 32px;
+    display: block;
+    background: $btn-small-color;
+    border-radius: 22px;
+
+}
+
+@mixin btn_small_hover {
+    padding: 8px 32px;
+    display: block;
+    background: $btn-small-hover-color;
+    border-radius: 22px;
+
+}
+
+
+@mixin link-text {
+    color: $link-color;
+    font-size: $font-m;
+}
+
+
+// @mixin center{
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translateX(-50%) translateY(-50%);
+
+// }

@@ -1,0 +1,418 @@
+.bg-price.bg1 {
+
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner.svg) no-repeat;
+    height: 559px;
+    width: 885px;
+
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
+
+
+.bg-price.bg2 {
+    height: 470px;
+    width: 100%;
+    background-color: #F7F9FD;
+    position: absolute;
+    z-index: -2;
+    border-radius: 0px 0px 0px 300px;
+}
+
+
+
+@media(max-width:376px) {
+
+
+    .bg-price.bg1 {
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/banner_sm.svg) no-repeat;
+        height: 495px;
+        width: 375px;
+        margin-top: 74px;
+
+        position: absolute;
+        z-index: -1;
+        right: 0;
+
+    }
+
+    .bg-price.bg2 {
+        height: 495px;
+        width: 375px;
+    }
+
+
+
+}
+
+.section1 {
+    padding-bottom: 180px;
+
+    h1 {
+        font-weight: bold;
+        font-size: 48px;
+        padding-top: 92px;
+    }
+
+    p {
+        font-size: $font-m;
+        padding-top: 16px;
+    }
+}
+
+
+@media(max-width:376px) {
+    .section1 {
+        padding-bottom: 180px;
+
+        h1 {
+            font-weight: bold;
+            font-size: 32px;
+            padding-top: 48px;
+        }
+
+        p {
+            font-size: $font-m;
+            padding-top: 16px;
+        }
+    }
+
+}
+
+.content-price {
+
+
+    .title.title1 {
+        font-size: $font-title;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+
+    @media(max-width:376px) {
+
+        .title.title1 {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 240px;
+        }
+
+
+    }
+
+
+
+    .btn.number {
+        ul {
+            padding-top: 48px;
+            display: flex;
+            justify-content: center;
+
+
+            li {
+                border: 1px solid $main-color;
+                border-radius: 27px;
+                margin: 0 8px;
+            }
+
+            a {
+                padding: 12px 32px;
+                display: block;
+                color: $main-color;
+            }
+
+
+            li.selected {
+                background-color: $main-color;
+
+
+                a {
+                    padding: 12px 32px;
+                    display: block;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+    }
+
+
+    @media(max-width:376px) {
+
+        .btn.number {
+            ul {
+                padding-top: 24px;
+                justify-content: start;
+                font-size: $font-m;
+
+
+        
+
+                a {
+                    padding: 8px 16px;
+                    width: 96px;
+                    height: 40px;
+                }
+
+
+                li.selected {
+                    background-color: $main-color;
+
+
+                    a {
+                        padding: 8px 16px;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+    .cards {
+        padding-top: 54px;
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            font-size: 24px;
+            padding: 16px 24px;
+            color: $main-font-color;
+            border-bottom: 1px solid #DDDDDD;
+            text-align: center;
+        }
+
+        .title.title2 {
+            padding-top: 32px;
+            font-size: $font-m;
+            text-align: center;
+            color: $main-font-color;
+        }
+
+
+
+        .card {
+            width: 45%;
+            box-shadow: 0 2px 10px #00000014;
+            border-radius: 12px;
+            margin: 0 10px;
+
+
+            .btn.cta {
+                @include btn_base;
+                display: inline-block;
+                margin-left: calc((100% - 136px) / 2);
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+
+            .counter {
+                display: flex;
+                justify-content: space-between;
+                margin: 32px 30px 0 30px;
+
+                .equal {
+                    font-size: 29px;
+                    color: #221E1F;
+                    line-height: 126px;
+                }
+
+                .subtitle {
+                    font-size: 14px;
+                    padding: 16px 32px 24px 32px;
+                    background-color: #F5F5F5;
+                    border-radius: 12px;
+
+                    p {
+                        padding-top: 8px;
+                    }
+
+                    .money {
+                        font-size: $font-title;
+                    }
+
+                    .number,
+                    .money {
+                        text-align: center;
+                        font-size: $font-title;
+                        color: $main-color;
+
+                        sub {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .money {
+                        color: #221E1F;
+                    }
+                }
+            }
+
+            .items {
+                padding: 32px 30px 0 30px;
+
+                li {
+                    padding-top: 16px;
+
+                    img {
+                        padding-right: 12px;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+    }
+
+
+    @media(max-width:376px) {
+
+
+
+        .cards {
+            padding: 32px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            h3 {
+                font-size: 24px;
+                padding: 16px 24px;
+                color: $main-font-color;
+                border-bottom: 1px solid #DDDDDD;
+                text-align: center;
+            }
+    
+            .title.title2 {
+                padding-top: 32px;
+                font-size: $font-m;
+                text-align: center;
+                color: $main-font-color;
+            }
+    
+    
+    
+            .card {
+                width: 100%;
+                box-shadow: 0 2px 10px #00000014;
+                border-radius: 12px;
+                margin: 24px 10px;
+    
+    
+                .btn.cta {
+                    @include btn_base;
+                    display: inline-block;
+                    margin-left: calc((100% - 136px) / 2);
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                }
+    
+                .counter {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0;
+                    padding-top: 24px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+    
+                    .equal {
+                        font-size: 24px;
+                        color: #221E1F;
+                        line-height: 126px;
+                    }
+    
+                    .subtitle {
+                        font-size: 14px;
+                        padding: 16px 16px ;
+                        background-color: #F5F5F5;
+                        border-radius: 12px;
+    
+                        p {
+                            padding-top: 8px;
+                        }
+
+                        .number,
+                        .money {
+                            font-size: 28px;
+                            color: $main-color;
+    
+                            sub {
+                                font-size: 12px;
+                            }
+                        }
+                        .money {
+                            color: #221E1F;
+                        }
+                  
+                    }
+                }
+    
+                .items {
+                    padding: 27px 16px ;
+    
+                    li {
+                        font-size: 14px;
+                        padding-top: 16px;
+    
+                        img {
+                            padding-right: 12px;
+                        }
+                    }
+                }
+    
+    
+    
+    
+    
+            }
+        }
+    
+
+
+
+
+    }
+
+
+    .content.faq {
+        ul {
+            padding-top: 48px;
+
+            li {
+                padding: 16px 32px;
+                margin-bottom: 16px;
+                box-shadow: 0px 2px 10px $bxsh-color;
+                border-radius: 12px;
+                font-size: 18px;
+                color: $main-font-color;
+
+
+                display: flex;
+                justify-content: space-between;
+
+                .text {
+                    font-size: $font-m;
+                    color: #747474;
+                    line-height: 28px;
+
+                    .question {
+                        font-size: 18px;
+                        color: $main-color;
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
